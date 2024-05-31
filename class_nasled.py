@@ -18,3 +18,8 @@ class Teacher:
 
     def get_teacher_data(self):
         return f"Преподаватель - {self._name_teacher}, образование {self._education}, опыт работы {self._experience} лет"
+
+    def add_mark(self, name_student, marks):
+        self._name_student = name_student
+        self._marks = marks
+        return f"{self._name_teacher}, поставил(а) оценку {self._marks} студенту {self._name_student}"
