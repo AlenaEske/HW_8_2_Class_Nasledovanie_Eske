@@ -28,3 +28,7 @@ class Teacher:
         self._name_student = name_student
         self._marks = marks
         return f"{self._name_teacher}, удалил(а) оценку {self._marks} студенту {self._name_student}"
+
+    def give_a_consultation(self, class_of_students):
+        self._class_of_students = class_of_students
+        return f"{self._name_teacher} провел(а) консультацию в классе {self._class_of_students}"
