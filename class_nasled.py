@@ -69,3 +69,10 @@ class DisciplineTeacher(Teacher):
         super().give_a_consultation(class_of_students)
         return (f"{self._name_teacher} провел(а) консультацию в классе {self._class_of_students} "
                 f"\nпо предмету {self._discipline} как {self._job_title}")
+
+teacher_1 = Teacher("Иван Петров", "КемГУ", 5)
+print(teacher_1.get_teacher_data())
+print(teacher_1.add_mark("Сидоров Коля", 2))
+print(teacher_1.remove_mark("Мухамеджонов Игнат", 3))
+print(teacher_1.give_a_consultation("5В"))
+print()
