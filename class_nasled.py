@@ -50,3 +50,22 @@ class DisciplineTeacher(Teacher):
 
     def set_job_title(self, job_title):
         self._job_title = job_title
+
+    def get_teacher_data(self):
+        return (f"Преподаватель - {self._name_teacher}, образование {self._education}, опыт работы {self._experience} лет "
+                f"\nПредмет: {self._discipline}, Должность {self._job_title}")
+
+    def add_mark(self, name_student, marks):
+        super().add_mark(name_student, marks)
+        return (f"{self._name_teacher}, поставил(а) оценку {self._marks} студенту {self._name_student}, "
+                f"\nПредмет: {self._discipline}")
+
+    def remove_mark(self, name_student, marks):
+        super().remove_mark(name_student, marks)
+        return (f"{self._name_teacher}, удалил(а) оценку {self._marks} студенту {self._name_student}"
+                f"\nПредмет: {self._discipline}")
+
+    def give_a_consultation(self, class_of_students):
+        super().give_a_consultation(class_of_students)
+        return (f"{self._name_teacher} провел(а) консультацию в классе {self._class_of_students} "
+                f"\nпо предмету {self._discipline} как {self._job_title}")
