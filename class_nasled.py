@@ -38,3 +38,15 @@ class DisciplineTeacher(Teacher):
         super().__init__(name_teacher, education, experience)
         self._discipline = discipline
         self._job_title = job_title
+
+    def get_discipline(self):
+        return self._discipline
+
+    def set_discipline(self, discipline):
+        self._discipline = discipline
+
+    def get_job_title(self):
+        return self._job_title
+
+    def set_job_title(self, job_title):
+        self._job_title = job_title
