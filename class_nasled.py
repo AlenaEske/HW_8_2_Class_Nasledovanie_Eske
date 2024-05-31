@@ -10,9 +10,11 @@ class Teacher:
     def get_education(self):
         return self._education
 
-
     def get_experience(self):
         return self._experience
 
     def set_experience(self, experience):
         self._experience = experience
+
+    def get_teacher_data(self):
+        return f"Преподаватель - {self._name_teacher}, образование {self._education}, опыт работы {self._experience} лет"
