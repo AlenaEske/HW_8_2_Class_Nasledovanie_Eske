@@ -23,3 +23,8 @@ class Teacher:
         self._name_student = name_student
         self._marks = marks
         return f"{self._name_teacher}, поставил(а) оценку {self._marks} студенту {self._name_student}"
+
+    def remove_mark(self, name_student, marks):
+        self._name_student = name_student
+        self._marks = marks
+        return f"{self._name_teacher}, удалил(а) оценку {self._marks} студенту {self._name_student}"
